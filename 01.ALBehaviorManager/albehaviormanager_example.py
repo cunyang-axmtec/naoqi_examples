@@ -29,7 +29,7 @@ def getBehaviors(behavior_mng_service):
     print "Behaviors on the robot:"
     print names
 
-    names = behavior_name.getRunningBehaviors()
+    names = behavior_mng_service.getRunningBehaviors()
     print "Running behaviors:"
     print names
 
@@ -89,7 +89,7 @@ def defaultBehaviors(behavior_mng_service, behavior_name):
     # Remove behavior from default.
     behavior_mng_service.removeDefaultBehavior(behavior_name)
 
-    name = behavior_mng_service.getDefaultBehaviors()
+    names = behavior_mng_service.getDefaultBehaviors()
     print "Default behaviors:"
     print names
 
